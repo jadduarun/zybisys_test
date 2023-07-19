@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Arun</h1>
+    <h1>Notes</h1>
+    <div class="box">
+      <fieldset>
+        <legend>Notes Taking</legend>
+        <div class="form">
+          <form id="form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" /><br /><br />
+            <label for="content">Content:</label><br>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea><br><br>
+            <button id="add">Add</button>
+          </form>
+        </div>
+      </fieldset>
+    </div>
+    <div>
+        <ul id="lists"></ul>
+    </div>
     <script type="module" src="app.js"></script>
 </body>
 </html>
