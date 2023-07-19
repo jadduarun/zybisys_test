@@ -10,7 +10,6 @@ add.addEventListener("click", (event) => {
     addList();
     titleInputBox.value = "";
     contentTextBox.value = "";
-    console.log(arr)
 })
 }
  if(add.innerText === "Update"){
@@ -56,9 +55,10 @@ function addList(){
     edit[i].addEventListener("click", (event) => {
         add.innerText = "Update";
         event.preventDefault();
-        for(let x of arr){
-            titleInputBox.value = x.title;
-            contentTextBox.value = x.content;
+        for(let x in arr){
+            console.log(x)
+            titleInputBox.value = arr[x].title;
+            contentTextBox.value = arr[x].content;
         }
         console.log(arr)
     })
